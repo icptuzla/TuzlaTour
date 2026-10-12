@@ -1,0 +1,23 @@
+# Exclude mobile platforms for web-only deploy
+android/
+ios/
+.gradle/
+capacitor.config.ts
+
+# Standard build artifacts
+dist/
+node_modules/
+.npm/
+
+# NOTE: Hero background videos (~17MB each) are included in the deploy.
+# They are within Vercel's 100MB/file limit and are needed for the landing page.
+# If build time becomes an issue, move them to a CDN (Cloudinary, Bunny.net, etc.)
+# and update the src URLs in components/LandingPage.tsx
+
+
+
+# Dev/tooling
+.agent/
+.idea/
+scratch/
+dev-dist/
